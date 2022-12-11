@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title> Scarlett Market</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="keywords" content="html, beginner"
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Zen+Antique&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  </head>
+
+<body>
+
+<h1>Scarletts Market</h1>
+
+<hr>
+<nav>
+  <ul>
+      <li><a href="HOME.html">HOME</a></li>
+      <li><a href="PHOTOS.html">PHOTOS</a></li>
+      <li><a href="STORE.html">STORE</a></li>
+      <li><a href="WIPS.html">WIPS</a></li>
+      <li><a href="CONTACT.html">CONTACT</a></li>
+  </ul>
+  </nav>
+<hr>
+  
+
+  
+  <b>
+    <form action="welcome.php" method="post">
+      Name: <input type="text" name="name"><br>
+      E-mail: <input type="text" name="email"><br>
+      <input type="submit">
+      </form>
+      Welcome <?php echo $_POST["name"]; ?><br>
+Your email address is: <?php echo $_POST["email"]; ?>
+
+</body>
+</html>
